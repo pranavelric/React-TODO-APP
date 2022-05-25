@@ -1,0 +1,33 @@
+ @use './styles/' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	&::after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	&::before {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+html {
+	font-size: 10px;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	background-color: $bg-1;
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

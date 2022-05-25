@@ -1,0 +1,34 @@
+@use '../../styles/' as *;
+
+.app_wrapper{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+.app_header{
+    @include flex(center,space-between);
+    height: 60px;
+}
+.content_wrapper{
+    background-color: $bg-2;
+    padding: 2rem;
+    border-radius: 12px;
+    @include mobile{
+        padding: 1.5rem;
+    }
+}
+
+.empty_text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:$black-2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: $gray-2;
+    width: max-content;
+    height: auto;
+
+
+}
