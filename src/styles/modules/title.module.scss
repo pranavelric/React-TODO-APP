@@ -1,0 +1,18 @@
+@use '../../styles/' as *;
+
+.title{
+    display: inline-block;
+	width: 100%;
+	font-family: 'Poppins';
+	font-size: 4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	color: $black-1;
+    @include mobile{
+        font-size: 3rem;
+    }
+}
