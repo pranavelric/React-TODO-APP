@@ -9,7 +9,7 @@ function App() {
     <>
     <div className="container">
       <PageTitle>Todo List</PageTitle>
-      <div className={style.app_wraper}>
+      <div className={style.app_wrapper}>
         <AppHeader/>
         <AppContent/>
       </div>
