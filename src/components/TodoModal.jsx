@@ -42,7 +42,7 @@ export default function TodoModal(props) {
         else{
             if(props.todo.title!==title||props.todo.status!==status){
                 dispatch(updateTodo({
-                ...props.todo,
+                id:props.todo.id,
                 title,
                 status,
                 }));
