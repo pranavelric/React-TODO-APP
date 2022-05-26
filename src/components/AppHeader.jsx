@@ -13,7 +13,7 @@ export default function AppHeader() {
         <option value="Complete">Complete</option>
         <option value="Incomplete">Incomplete</option>
     </SelectButton>
-    <TodoModal modelOpen={modelOpen} setModalOpen={setModalOpen}/>
+    <TodoModal  type='add' modelOpen={modelOpen} setModalOpen={setModalOpen}/>
   </div>
   )
 }
