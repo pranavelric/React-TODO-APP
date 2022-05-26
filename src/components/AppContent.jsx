@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import TodoItem from './TodoItem';
 import styles from '../styles/modules/app.module.scss';
-import { motion, useMotionValue, useTransform,AnimatePresence } from 'framer-motion';
+import { motion,AnimatePresence } from 'framer-motion';
 
 const containerVariant= {
   hidden:{opacity:0},
