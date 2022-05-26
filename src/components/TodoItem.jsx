@@ -8,6 +8,16 @@ import { deleteTodo, updateTodo } from '../slices/todoSlice';
 import {toast} from 'react-hot-toast';
 import TodoModal from './TodoModal';
 import CheckButton from './CheckButton';
+import { motion, useMotionValue, useTransform,AnimatePresence } from 'framer-motion';
+
+
+const childVariant = {
+  hidden:{y:20,opacity:0},
+  visible:{
+    y:0,
+    opacity:1,
+  }
+}
 
 export default function TodoItem(props) {
   const [checked,setChecked] = useState(false);
@@ -42,7 +52,7 @@ export default function TodoItem(props) {
 
   return (
     <>
-    <div className={styles.item}>
+    <motion.div className={styles.item} variants={childVariant}>
       <div className={styles.todoDetails}>
           <CheckButton checked={checked} handleChecked={handleChecked}></CheckButton>
           <div className={styles.texts}>
@@ -64,7 +74,7 @@ export default function TodoItem(props) {
         <MdEdit/>
         </div>
       </div>
-  </div>
+  </motion.div>
   <TodoModal
         type="update"
         modelOpen={updateModalOpen}
